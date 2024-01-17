@@ -1,0 +1,15 @@
+[Unit]
+Description=Run Val/QC auto AOI generation API
+After=network.target
+
+[Service]
+WorkingDirectory=/home/aerotract/software/LabelManagerService
+User=aerotract
+Restart=always
+Environment="QT_QPA_PLATFORM=offscreen"
+Environment="PYTHONPATH=/usr/share/qgis/python/plugins"
+Environment="LD_LIBRARY_PATH=/usr/share/qgis/python"
+ExecStart=/usr/bin/python3 /home/aerotract/software/LabelService/api.py
+
+[Install]
+WantedBy=multi-user.target
