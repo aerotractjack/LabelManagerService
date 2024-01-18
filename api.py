@@ -58,4 +58,5 @@ def ref_aois_points():
     
 
 if __name__ == "__main__":
-    app.run(port=7112, debug=True, host="0.0.0.0")
+    from waitress import serve
+    serve(app, port=7112, host="0.0.0.0")

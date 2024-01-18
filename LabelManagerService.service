@@ -9,7 +9,7 @@ Restart=always
 Environment="QT_QPA_PLATFORM=offscreen"
 Environment="PYTHONPATH=/usr/share/qgis/python/plugins"
 Environment="LD_LIBRARY_PATH=/usr/share/qgis/python"
-ExecStart=/usr/bin/python3 /home/aerotract/software/LabelService/api.py
+ExecStart=/usr/bin/python3 /home/aerotract/software/LabelManagerService/api.py
 
 [Install]
 WantedBy=multi-user.target
