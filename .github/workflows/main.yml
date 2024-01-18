@@ -1,4 +1,4 @@
-name: Deploy LabelService SDK to Workstations
+name: Deploy LabelManager API to Workstations
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 env:
   REMOTE_IP: 67.210.192.18
-  REMOTE_DIR: /home/aerotract/software/LabelService
+  REMOTE_DIR: /home/aerotract/software/LabelManagerService
   RESTART_SCRIPT: /home/aerotract/software/internal-tools/restart-service.sh
 
 jobs:
