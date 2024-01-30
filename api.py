@@ -59,4 +59,7 @@ def ref_aois_points():
 
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, port=7112, host="0.0.0.0")
+    from QGISGridMaker import QGISContext
+
+    with QGISContext() as qgc:
+        serve(app, port=7112, host="0.0.0.0")
